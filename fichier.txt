@@ -4,3 +4,5 @@ Aona ny fahitan lah anio diagramme de classe io,
 Samy manana compte ny employeur sy ny candidat fa ny employeur mila manao abonnement vao afaka mandefa projet.
 de ny abonnement manana type de afak misafidy 
 
+ny candidat afaka mipostule @ projet maro de ny projet iray afaka ipostulen  candidat maro 
+
