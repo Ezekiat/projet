@@ -5,3 +5,42 @@ RG2: un employeur peut publier plusieurs projets, un projet doit publier par un 
 RG3: un employeur doit souscrire à un abonnement
 RG4: un abonnement a une type, une type appartient à un abonnement
 RG5: l'employeur peut choisir un type d'abonnement
+
+ty ny tany @ chatgpt
+
+Voici les règles de gestion basées sur ce diagramme de classe :
+
+1. **Un utilisateur (`User`)** :
+   - possède des informations de base, telles que `nom`, `email`, et `mot_de_passe`.
+   - peut se connecter (`connexion()`), se déconnecter (`deconnexion()`) et créer un compte (`creerCompte()`).
+   - peut être de type `Candidat` ou `Employeur`.
+
+2. **Un candidat (`Candidat`)** :
+   - hérite des caractéristiques de la classe `User` et possède un `CV` pour compléter son profil.
+   - peut envoyer une candidature (`envoyerCandidature()`) pour postuler à un projet.
+
+3. **Un candidat peut postuler à plusieurs projets** :
+   - La classe `Postuler` permet de gérer la relation entre un candidat et les projets auxquels il a postulé.
+   - Chaque `Postuler` enregistre l'`idCandidate`, l'`idProjet` et la `datePostule`, représentant la date à laquelle le candidat a postulé au projet.
+
+4. **Un projet (`Projet`)** :
+   - est publié par un employeur (`Employeur`) et est caractérisé par un `titre` et une `description`.
+   - peut être postulé par plusieurs candidats.
+
+5. **Un employeur (`Employeur`)** :
+   - hérite des caractéristiques de la classe `User`.
+   - peut publier plusieurs projets via la méthode `publieProjet()`.
+
+6. **Un employeur doit souscrire à un abonnement** :
+   - Un employeur doit avoir un abonnement pour publier des projets.
+   - La relation entre `Employeur` et `Abonnement` est représentée par "souscrire à", avec une cardinalité de 1, indiquant qu'un employeur a toujours un abonnement actif.
+
+7. **Un abonnement (`Abonnement`)** :
+   - est caractérisé par un `prix`, une `date_debut`, une `date_fin`, et un `titre`.
+   - est associé à un type d'abonnement (`Type`), ce qui permet de définir les caractéristiques spécifiques de l'abonnement.
+
+8. **Un type d'abonnement (`Type`)** :
+   - contient des informations comme `type` et `description` pour décrire le type d'abonnement (par exemple, "Standard", "Premium", etc.).
+   - est lié à l'abonnement via une association "avoir", indiquant qu'un abonnement possède toujours un type d'abonnement.
+
+Ces règles de gestion illustrent les différentes relations entre les utilisateurs (candidats et employeurs), les projets, et les abonnements pour la publication et la candidature à des projets.
