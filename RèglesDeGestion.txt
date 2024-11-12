@@ -1,0 +1,7 @@
+REGLE DE GESTION
+
+RG1: un candidat peut postuler à plusieur projets, un projet peut être postuler par plusieur candidats
+RG2: un employeur peut publier plusieurs projets, un projet doit publier par un employeur
+RG3: un employeur doit souscrire à un abonnement
+RG4: un abonnement a une type, une type appartient à un abonnement
+RG5: l'employeur peut choisir un type d'abonnement
