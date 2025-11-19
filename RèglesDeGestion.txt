@@ -44,3 +44,6 @@ Voici les règles de gestion basées sur ce diagramme de classe :
    - est lié à l'abonnement via une association "avoir", indiquant qu'un abonnement possède toujours un type d'abonnement.
 
 Ces règles de gestion illustrent les différentes relations entre les utilisateurs (candidats et employeurs), les projets, et les abonnements pour la publication et la candidature à des projets.
+
+
+
